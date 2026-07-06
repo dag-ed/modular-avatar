@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Added `MA Force Active State`, which forces a GameObject to a configured active state during avatar build.
 
 ### Fixed
 

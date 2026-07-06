@@ -60,6 +60,7 @@ namespace nadena.dev.modular_avatar.core.editor.plugin
             seq.WithRequiredExtension(typeof(ModularAvatarContext), _s1 =>
             {
                 seq.Run(ClearEditorOnlyTags.Instance);
+                seq.Run(ForceActiveStatePass.Instance);
                 seq.Run(VRChatSettingsPass.Instance);
                 seq.Run(MeshSettingsPluginPass.Instance);
                 seq.Run(ScaleAdjusterPass.Instance).PreviewingWith(new ScaleAdjusterPreview());
