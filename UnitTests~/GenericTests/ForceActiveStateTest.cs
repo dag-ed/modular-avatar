@@ -15,6 +15,15 @@ namespace modular_avatar_tests
         }
 
         [Test]
+        public void DefaultsToInactive()
+        {
+            var root = CreateRoot("root");
+            var component = root.AddComponent<ModularAvatarForceActiveState>();
+
+            Assert.IsFalse(component.Active);
+        }
+
+        [Test]
         public void ForcesActiveObjectInactive()
         {
             var root = CreateRoot("root");

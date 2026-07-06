@@ -8,7 +8,7 @@ namespace nadena.dev.modular_avatar.core
     public class ModularAvatarForceActiveState : AvatarTagComponent
     {
         [SerializeField]
-        internal bool m_active = true;
+        internal bool m_active = false;
 
         public bool Active
         {
